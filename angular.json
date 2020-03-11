@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "temptwo": {
@@ -88,9 +88,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+
+               "maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
+               "//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+
+            ]
           }
         },
         "lint": {
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "temptwo"
+    }
+  },
+  "defaultProject": "temptwo",
+  "cli": {
+    "analytics": false
+  }
 }
